@@ -1,0 +1,11 @@
+{
+  "name": "debug-any-level",
+  "version": "0.0.0",
+  "description": "debug with any custom level using ES6 Proxy",
+  "main": "index.js",
+  "files": [],
+  "repository": "laggingreflex/debug-any-level",
+  "dependencies": {
+    "debug": "*"
+  }
+}
