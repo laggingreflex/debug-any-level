@@ -1,6 +1,6 @@
 {
   "name": "debug-any-level",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "debug with any custom level using ES6 Proxy",
   "main": "index.js",
   "files": [],
