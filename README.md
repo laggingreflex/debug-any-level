@@ -26,6 +26,9 @@ debug.error('something went wrong')
 // => error something went wrong
 debug.custom('watch this!')
 // => custom watch this!
+debug.custom.deep('watch this!')
+// => custom:deep watch this!
+
 
 // with a namespace
 const app = debug('app')
