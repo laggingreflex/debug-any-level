@@ -14,6 +14,8 @@ function get(t, k, r, name) {
   }
 }
 
-const debugAny = new Proxy((name, ...rest) => new Proxy(debug(name, ...rest), { get: (...args) => get(...args, name) }), { get });
+const set = (target, key, value) => Reflect.set(debug, key, value);
+
+const debugAny = new Proxy((name, ...rest) => new Proxy(debug(name, ...rest), { get: (...args) => get(...args, name), set }), { get, set });
 
 module.exports = debugAny;
